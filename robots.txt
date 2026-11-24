@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://romeiro44.github.io/novera-site/sitemap.xml
