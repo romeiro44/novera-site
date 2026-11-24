@@ -7,6 +7,7 @@ Landing page estática responsiva, em português, preparada para GitHub Pages. N
 - `index.html`: conteúdo, metadados de busca e estrutura acessível.
 - `styles.css`: identidade visual responsiva e ilustrações vetoriais.
 - `simulator.css`: apresentação responsiva da simulação inicial de energia solar.
+- `site-structures.css`: composição responsiva das seções de público, portfólio, conteúdo e consentimento.
 - `script.js`: menu móvel, formulário que prepara conversa no WhatsApp, eventos de conversão.
 - `marketing-config.js`: campos vazios para futuras IDs de marketing; nenhum rastreador carrega por padrão.
 - `conteudos/index.html`: listagem editorial preparada, sem artigos fictícios.
