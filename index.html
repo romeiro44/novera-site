@@ -46,6 +46,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="simulator.css">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -103,7 +104,32 @@
 
     <section class="audience-detail audience-business section-pad" id="empresarial"><div class="audience-copy"><div class="section-kicker">ENERGIA SOLAR EMPRESARIAL</div><h2>Mais inteligência para o consumo<br>da sua empresa.</h2><p>Uma avaliação inicial considera a rotina do negócio, o consumo informado e as características do imóvel. Projeções e condições precisam ser confirmadas em proposta própria.</p><ul><li>Contexto operacional e consumo</li><li>Aplicações comerciais, industriais ou rurais</li><li>Escopo do projeto e instalação detalhados na proposta</li></ul><a class="button button-dark" data-project="empresarial" href="#contato">Avaliar minha empresa <span>↗</span></a></div><div class="audience-note"><span>02 / EMPRESARIAL</span><b>Planejamento energético<br>para cada operação.</b><span>Ribeirão Preto e região</span></div></section>
 
-    <section class="simulator section-pad" id="simulador"><div class="section-kicker">SIMULAÇÃO INICIAL</div><div class="simulator-layout"><div><h2>Descubra o potencial da energia solar para você.</h2><p>Informe alguns dados para iniciar uma conversa mais direcionada. O resultado é qualitativo: não calcula economia, tarifa ou dimensionamento do sistema.</p></div><form id="simulator-form" class="simulator-form"><label for="sim-city">Cidade</label><input id="sim-city" name="city" autocomplete="address-level2" required placeholder="Ex.: Ribeirão Preto"><div class="form-row"><div><label for="sim-kind">Tipo de consumo</label><select id="sim-kind" name="kind" required><option value="">Selecione</option><option value="residencial">Residencial</option><option value="empresarial">Empresarial</option></select></div><div><label for="sim-property">Tipo de imóvel</label><select id="sim-property" name="property" required><option value="">Selecione</option><option>Casa</option><option>Apartamento</option><option>Comercial</option><option>Industrial / rural</option><option>Outro</option></select></div></div><label for="sim-bill">Valor médio mensal da conta (R$)</label><input id="sim-bill" name="bill" type="number" min="0" step="0.01" inputmode="decimal" required placeholder="Ex.: 450"><button class="button button-lime" type="submit">Ver análise inicial <span>↗</span></button><div id="simulator-result" class="simulator-result" role="status" aria-live="polite" hidden></div></form></div><p class="simulator-disclaimer">Esta ferramenta não utiliza tarifa configurada, não estima valores de economia nem substitui avaliação técnica. Regras de compensação, condições da distribuidora e características do sistema podem afetar o resultado de um projeto.</p></section>
+    <section class="simulator section-pad" id="simulador">
+      <div class="simulator-kicker"><div class="section-kicker">SIMULAÇÃO INICIAL</div><span>RESIDENCIAL · EMPRESARIAL</span></div>
+      <div class="simulator-layout">
+        <div class="simulator-copy">
+          <p class="simulator-overline"><span></span> Um primeiro olhar para o seu projeto</p>
+          <h2>Descubra o potencial da energia solar para você.</h2>
+          <p>Conte um pouco sobre seu imóvel e seu consumo. A análise ajuda a direcionar a conversa, sem atalhos ou promessas automáticas.</p>
+          <div class="simulator-art" role="img" aria-label="Ilustração abstrata de luz solar sobre uma arquitetura com painéis fotovoltaicos">
+            <div class="sim-art-sun"></div><div class="sim-art-orbit"></div>
+            <svg viewBox="0 0 620 230" aria-hidden="true"><path class="sim-art-hill" d="M0 189Q136 130 264 171T620 140v90H0Z"/><path class="sim-art-house" d="m120 156 169-96 175 101v69H120Z"/><path class="sim-art-side" d="m289 60 175 101v69H289Z"/><path class="sim-art-roof" d="m93 149 196-112 201 116-25 15L289 81 117 180Z"/><path class="sim-art-panel" d="m180 103 103-59 35 21-104 60Zm50 28 103-59 35 21-104 60Zm52 29 103-59 34 20-104 60Z"/><path class="sim-art-window" d="M151 171h52v48h-52zM217 171h42v48h-42zM319 158h88v57h-88z"/><path class="sim-art-door" d="M264 188h42v38h-42z"/></svg>
+            <div class="sim-art-label"><span>NOVERA / SOLAR</span><b>Energia que acompanha<br>novos planos.</b></div>
+          </div>
+          <div class="simulator-note"><span aria-hidden="true">✳</span><p><b>Cada imóvel tem seu contexto.</b><br>O resultado é qualitativo e não calcula economia, tarifa ou dimensionamento.</p></div>
+        </div>
+        <form id="simulator-form" class="simulator-form">
+          <div class="simulator-form-heading"><span><i aria-hidden="true">N</i> SEU PERFIL DE CONSUMO</span><span>01 — 04</span></div>
+          <div class="sim-field"><label for="sim-city">Cidade</label><input id="sim-city" name="city" autocomplete="address-level2" required placeholder="Ex.: Ribeirão Preto"></div>
+          <div class="form-row"><div class="sim-field"><label for="sim-kind">Tipo de consumo</label><select id="sim-kind" name="kind" required><option value="">Selecione</option><option value="residencial">Residencial</option><option value="empresarial">Empresarial</option></select></div><div class="sim-field"><label for="sim-property">Tipo de imóvel</label><select id="sim-property" name="property" required><option value="">Selecione</option><option>Casa</option><option>Apartamento</option><option>Comercial</option><option>Industrial / rural</option><option>Outro</option></select></div></div>
+          <div class="sim-field"><label for="sim-bill">Valor médio mensal da conta</label><div class="sim-currency"><span>R$</span><input id="sim-bill" name="bill" type="number" min="0" step="0.01" inputmode="decimal" required placeholder="Ex.: 450"></div></div>
+          <button class="button button-lime" type="submit">Ver minha análise inicial <span>↗</span></button>
+          <div id="simulator-result" class="simulator-result" role="status" aria-live="polite" hidden></div>
+          <p class="simulator-form-foot">Sem envio para servidor. Você decide se quer continuar pelo WhatsApp.</p>
+        </form>
+      </div>
+      <div class="simulator-disclaimer"><span aria-hidden="true">i</span><p><b>Sobre esta simulação</b> — Não substitui uma avaliação técnica nem estima valores de economia. Regras de compensação, condições da distribuidora e características do sistema podem alterar a análise do projeto.</p></div>
+    </section>
 
     <section class="portfolio section-pad" id="projetos"><div class="section-kicker">PROJETOS</div><div class="portfolio-heading"><h2>Projetos pensados<br>para cada realidade.</h2><p>Espaço preparado para mostrar trabalhos reais, com imagens e informações confirmadas pela NOVERA.</p></div><div class="portfolio-empty"><span class="portfolio-symbol" aria-hidden="true">N</span><div><b>Portfólio em preparação</b><p>Os projetos serão apresentados aqui após a confirmação das fotografias, cidades, características e soluções aplicadas.</p></div></div></section>
 
