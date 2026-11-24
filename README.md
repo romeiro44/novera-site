@@ -7,16 +7,15 @@ Landing page estática responsiva, em português, preparada para GitHub Pages. N
 - `index.html`: conteúdo, metadados de busca e estrutura acessível.
 - `styles.css`: identidade visual responsiva e ilustrações vetoriais.
 - `simulator.css`: apresentação responsiva da simulação inicial de energia solar.
-- `site-structures.css`: composição responsiva das seções de público, portfólio, conteúdo e consentimento.
+- `site-structures.css`: composição responsiva das seções de público, conteúdo e consentimento.
 - `script.js`: menu móvel, formulário que prepara conversa no WhatsApp, eventos de conversão.
 - `marketing-config.js`: campos vazios para futuras IDs de marketing; nenhum rastreador carrega por padrão.
 - `conteudos/index.html`: listagem editorial preparada, sem artigos fictícios.
 - `conteudos/modelo.html`: modelo de artigo interno com `noindex` até ser revisado e preenchido.
-- `projetos/modelo.html`: ficha interna para cadastrar casos reais autorizados, também com `noindex`.
 - `assets/favicon.svg`: símbolo da marca para a aba do navegador.
 - `robots.txt` e `sitemap.xml`: orientação de rastreamento e endereço público da página.
 
-A página inicial agora tem caminhos residenciais e empresariais, simulador qualitativo, formulário que abre uma mensagem preparada no WhatsApp e uma área de portfólio em estado vazio até existirem projetos reais para publicar. A simulação não calcula economia ou dimensionamento e não usa tarifa inventada.
+A página inicial tem caminhos residenciais e empresariais, simulador qualitativo e formulário que abre uma mensagem preparada no WhatsApp. A simulação não calcula economia ou dimensionamento e não usa tarifa inventada.
 
 ## Antes de publicar
 
